@@ -18,7 +18,7 @@ services:
       - 8080:8080 
 
   nginx:
-    image: nginx:alpine
+    image: praqma/network-multitool:alpine
     labels:
       - traefik.frontend.rule=Host:nginx.example.com,www.example.com,example.com
       - traefik.port=80
